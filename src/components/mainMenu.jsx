@@ -15,18 +15,18 @@ const MainMenu = () => {
     return (
         <nav className={`top-right ${menuOpen}`}>
             <a className="disc l1">
-                <div>Messages</div>
+                <div>Resume</div>
             </a>
             <a className="disc l2">
-                <div>Photos</div>
+                <div>Projects</div>
             </a>
             <a className="disc l3">
-                <div>Profile</div>
+                <div>Sport</div>
             </a>
-            <a className="disc l4">
-                <div>Likes</div>
-            </a>
-            <a className="disc l5 toggle" onClick={handleOnMenuClick}>
+
+            <a 
+            className="disc l4 toggle" 
+            onClick={handleOnMenuClick}>
                 Menu
             </a>
         </nav>
