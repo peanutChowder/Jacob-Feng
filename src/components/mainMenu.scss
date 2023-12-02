@@ -2,20 +2,15 @@ $size : 50px;
 $items : 5;
 $transition : .5s;
 $bounce : cubic-bezier(.3,1.4,.5,.9);
-$color-inner : gold;
-$color-outer : tomato;
+$color-inner : rgb(109, 46, 209);
+$color-outer : rgb(66, 39, 242);
+$color-open-hover : rgb(56, 217, 245);
+$color-open-text : rgb(189, 179, 255);
 $background: mix($color-inner, $color-outer);
-$black : shade($color-outer, 80%);
 $start-scale : .5;
 $start-rot : 190deg;
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900');
-
-html, body { height: 100%; }
-body {
-	background: beige;
-	font-family: Alegreya Sans, sans-serif;
-}
 
 nav {
 	display: block;
@@ -79,10 +74,11 @@ nav {
 			transition-delay: $i * $transition/$items;
 			transform: scale3d(1,1,1) rotate3d(0,0,1,$start-rot);
 			opacity: 1;
+			color: $color-open-text;
 			
 			&:hover {
 				background: shade($color, 90%);
-				color: $color;
+				color: $color-open-hover;
 				transition-delay: 0s;
 
 			}
