@@ -1,6 +1,6 @@
 import './App.scss'
 
-import MainMenu from './assets/components/mainMenu'
+import MainMenu from './components/mainMenu'
 
 function App() {
 

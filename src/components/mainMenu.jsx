@@ -1,3 +1,5 @@
+import './mainMenu.scss'
+
 const MainMenu = () => {
     return (
         <nav className="top-right open">
