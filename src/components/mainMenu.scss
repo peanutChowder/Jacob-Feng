@@ -2,11 +2,17 @@ $size : 50px;
 $items : 4;
 $transition : .5s;
 $bounce : cubic-bezier(.3,1.4,.5,.9);
+
+$color-text: rgb(189, 179, 255);
+$color-text-hover: rgb(56, 217, 245);
+$color-text-active: rgb(188, 56, 245);
 $color-inner : rgb(109, 46, 209);
 $color-outer : rgb(66, 39, 242);
+
 $color-open-text-hover : rgb(56, 217, 245);
 $color-open-text-active: rgb(188, 56, 245);
 $color-open-text : rgb(189, 179, 255);
+
 $background: mix($color-inner, $color-outer);
 $start-scale : .5;
 $start-rot : 190deg;
@@ -45,6 +51,7 @@ nav {
 	pointer-events: none;
 	opacity: 0;
 	cursor: pointer;
+	color: $color-text;
 	transition: transform $transition $bounce, opacity $transition;
 	
 	div {
@@ -113,10 +120,11 @@ nav {
 	&:hover {
 		background: shade($color-inner, 90%);
 		text-decoration: underline;
+		color: $color-text-hover;
 	}
 	&:active {
 		background: shade($color-inner, 50%);
-		color: rgba($color-inner, .5);
+		color: $color-text-active;
 		transform: scale(.9);
 		transition-duration: 0s;
 	}
