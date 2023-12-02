@@ -1,5 +1,3 @@
-import './App.scss'
-
 import MainMenu from './components/mainMenu'
 
 function App() {
