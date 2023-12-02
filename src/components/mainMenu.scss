@@ -4,7 +4,8 @@ $transition : .5s;
 $bounce : cubic-bezier(.3,1.4,.5,.9);
 $color-inner : rgb(109, 46, 209);
 $color-outer : rgb(66, 39, 242);
-$color-open-hover : rgb(56, 217, 245);
+$color-open-text-hover : rgb(56, 217, 245);
+$color-open-text-active: rgb(188, 56, 245);
 $color-open-text : rgb(189, 179, 255);
 $background: mix($color-inner, $color-outer);
 $start-scale : .5;
@@ -78,14 +79,14 @@ nav {
 			
 			&:hover {
 				background: shade($color, 90%);
-				color: $color-open-hover;
+				color: $color-open-text-hover;
 				transition-delay: 0s;
 
 			}
 	
 			&:active {
 				background: shade($color, 50%);
-				color: $color;
+				color: $color-open-text-active;
 			}
 			
 			&.toggle {
