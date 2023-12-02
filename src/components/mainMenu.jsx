@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './mainMenu.scss'
 
 const MainMenu = () => {
-    const [menuOpen, setMenuOpen] = useState("open");
+    const [menuOpen, setMenuOpen] = useState("close");
 
     const handleOnMenuClick = () => {
         if (menuOpen == "open") {
