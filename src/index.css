@@ -13,7 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body, html, div {
-  margin: 0px;
+div:not(.disc > div):not(.home-wrapper),
+body {
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
