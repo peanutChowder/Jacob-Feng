@@ -68,7 +68,7 @@ nav {
 	.l#{$i} {
 		$i : $i - 1;
 		$-i : $items - $i;
-		$pct : $i/$items * 100%;
+		$pct : calc($i/$items * 100%);
 		$color :  mix($color-inner, $color-outer, $pct);
 		
 		top: $i * $size;
@@ -76,10 +76,10 @@ nav {
 		right: $i * $size;
 		bottom: $i * $size;
 		background: $color;
-		transition-delay: $i * $transition/$items;
+		transition-delay: calc($i * $transition/$items);
 	
 		.open & {
-			transition-delay: $i * $transition/$items;
+			transition-delay: calc($i * $transition/$items);
 			transform: scale3d(1,1,1) rotate3d(0,0,1,$start-rot);
 			opacity: 1;
 			color: $color-open-text;
