@@ -20,7 +20,7 @@ const CircleMenu = ({ menuOpen, setMenuOpen }) => {
                 <div>Projects</div>
             </a>
             <a className="disc l3">
-                <div>Sport</div>
+                <div>Fun</div>
             </a>
 
             <a 
