@@ -2,8 +2,8 @@ import "./homeButton.css"
 
 const HomeButton = () => {
     return (
-        <div>
-            <link className="gg-home"/>
+        <div className="home-wrapper">
+            <i className="gg-home-alt"></i>
         </div>
         
     )
