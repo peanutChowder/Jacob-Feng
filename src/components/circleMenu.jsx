@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
+
 import './circleMenu.scss'
 
 const CircleMenu = ({ menuOpen, setMenuOpen }) => {
-
+    const navigate = useNavigate()
     const handleOnMenuClick = () => {
         if (menuOpen == "open") {
             setMenuOpen("close");
@@ -13,13 +15,13 @@ const CircleMenu = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <nav className={`top-right ${menuOpen}`}>
-            <a className="disc l1">
+            <a className="disc l1" onClick={() => {navigate("/resume")}}>
                 <div>Resume</div>
             </a>
-            <a className="disc l2">
+            <a className="disc l2" onClick={() => {navigate("/projects")}}>
                 <div>Projects</div>
             </a>
-            <a className="disc l3">
+            <a className="disc l3" onClick={() => {navigate("/fun")}}>
                 <div>Fun</div>
             </a>
 
