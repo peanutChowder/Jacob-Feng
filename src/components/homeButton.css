@@ -1,0 +1,70 @@
+:root {
+    --color-text: rgb(189, 179, 255);
+    --color-text-hover: rgb(56, 217, 245);
+    --color-text-active: rgb(188, 56, 245);
+    --color-inner : rgb(109, 46, 209);
+}
+
+
+.home-wrapper {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--color-inner);
+}
+
+.home-wrapper:hover .gg-home-alt {
+    color: var(--color-text-hover);
+}
+
+.home-wrapper:active .gg-home-alt {
+    color: var(--color-text-active);
+}
+
+.gg-home-alt {
+    color: var(--color-text);
+    left: 20px;
+    top: 25px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 18px;
+    height: 14px;
+    border: 2px solid;
+    border-top: 0;
+    border-radius: 2px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: -2px;
+}
+.gg-home-alt::after,
+.gg-home-alt::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-home-alt::before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 4px;
+    transform: rotate(45deg);
+    top: -5px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    left: 0
+}
+.gg-home-alt::after {
+    width: 6px;
+    height: 10px;
+    background: currentColor;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    left: 4px;
+    bottom: -2px
+}
