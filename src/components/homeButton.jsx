@@ -2,7 +2,10 @@ import "./homeButton.css"
 
 const HomeButton = () => {
     return (
-        <button>asd</button>
+        <div>
+            <link className="gg-home"/>
+        </div>
+        
     )
 }
 
