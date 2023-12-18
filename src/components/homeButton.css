@@ -16,6 +16,14 @@
     background-color: var(--color-inner);
 }
 
+.home-wrapper:hover .gg-home-alt {
+    color: var(--color-text-hover);
+}
+
+.home-wrapper:active .gg-home-alt {
+    color: var(--color-text-active);
+}
+
 .gg-home-alt {
     color: var(--color-text);
     left: 20px;
@@ -31,7 +39,7 @@
     border-radius: 2px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    margin-bottom: -2px
+    margin-bottom: -2px;
 }
 .gg-home-alt::after,
 .gg-home-alt::before {
