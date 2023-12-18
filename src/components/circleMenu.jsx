@@ -1,4 +1,4 @@
-import { propTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import './circleMenu.scss'
 
 const CircleMenu = ({ menuOpen, setMenuOpen }) => {
@@ -33,8 +33,8 @@ const CircleMenu = ({ menuOpen, setMenuOpen }) => {
 }
 
 CircleMenu.propTypes = {
-    menuOpen: propTypes.bool.isRequired,
-    setMenuOpen: propTypes.func.isRequired
+    menuOpen: PropTypes.string,
+    setMenuOpen: PropTypes.func.isRequired
 }
 
 export default CircleMenu
