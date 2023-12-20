@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900');
 
 :root {
   line-height: 1.5;
@@ -25,4 +26,8 @@ html {
   height: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+div {
+  font-family: "Alegreya Sans";
 }
