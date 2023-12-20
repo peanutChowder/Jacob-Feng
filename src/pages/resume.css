@@ -2,7 +2,6 @@
     opacity: 0;
   }
   .element.animated {
-    /*opacity: 1;*/
     animation-name: fadeInDown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -16,7 +15,7 @@
   @keyframes fadeInDown {
     from {
       opacity: 0;
-      transform: translate3d(0, -40%, 0);
+      transform: translate3d(0, -10%, 0);
     }
     to {
       opacity: 1;
