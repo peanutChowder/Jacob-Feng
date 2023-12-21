@@ -57,3 +57,7 @@
       opacity: 1;
     }
   }
+
+#scrolling-container {
+  height: fit-content;
+}

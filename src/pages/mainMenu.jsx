@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 
 import CircleMenu from '../components/circleMenu';
+import ScrollingDisplay from '../components/scrollingDisplay';
 
 import './mainMenu.css'
 
 const MainMenu = ({ menuOpen, setMenuOpen }) => {
-    
-
     return (
         <div>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -17,9 +16,10 @@ const MainMenu = ({ menuOpen, setMenuOpen }) => {
                 </div>
                 <div id='mainpage-content-text' className='fi-element fade-in'>
                     <h1>Jacob Feng</h1>
-                    <h2 className='fi-element fade-in'>Seeking Summer 2024 8-month internships</h2>
-                    <p className='fi-element fade-in'>Software Engineering @ University of Alberta</p>
-                    <p className='fi-element fade-in'>Olympic Weightlifter</p>
+                    <div id='scrolling-container'>
+                        <ScrollingDisplay/>
+                    </div>
+                    <h2>Seeking Summer 2024 8-month internships</h2>        
                 </div>
             </div>
             
