@@ -2,17 +2,19 @@
 
 :root {
   --color-text: rgb(189, 179, 255);
+  --color-text-light: rgb(227, 222, 255);
   --color-text-hover: rgb(56, 217, 245);
   --color-text-active: rgb(188, 56, 245);
   --color-inner : rgb(109, 46, 209);
   --color-outer : rgb(66, 39, 242);
+  --color-background: #242424;
 
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,7 +25,7 @@
 h1 {
   font-family: 'Rubik Scribble';
   font-size: 60px;
-  color: rgb(189, 179, 255);
+  color: var(--color-text);
 }
 
 #root,
