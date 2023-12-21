@@ -16,7 +16,7 @@
   content: '';
   position: absolute;
   width: 2px;
-  background: var(--color-inner);
+  background: var(--color-text);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -45,8 +45,8 @@
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
-  border: 2px solid var(--color-inner);
+  background: var(--color-background);
+  border: 2px solid var(--color-text);
   border-radius: 16px;
   z-index: 1;
 }
@@ -62,7 +62,7 @@
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: var(--color-inner);
+  background: var(--color-text);
   z-index: 1;
 }
 
@@ -77,7 +77,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: var(--color-text-light);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -98,8 +98,8 @@
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
-  border: 2px solid var(--color-inner);
+  background: var(--color-background);
+  border: 2px solid var(--color-text);
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
@@ -116,28 +116,28 @@
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  background: var(--color-inner);
   position: relative;
-  border-radius: 0 500px 500px 0;
+  border-radius: 40px;
 }
 
 .container.right .content {
   padding: 30px 30px 30px 90px;
-  border-radius: 500px 0 0 500px;
+  border-radius: 40px;
 }
 
 .container .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #006E51;
+  color: var(--color-text-light);
 }
 
 .container .content p {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: white;
 }
 
 @media (max-width: 767.98px) {
