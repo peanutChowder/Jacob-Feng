@@ -21,6 +21,7 @@
   bottom: 0;
   left: 50%;
   margin-left: -1px;
+  z-index: -1;
 }
 
 .container {
