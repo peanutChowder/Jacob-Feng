@@ -3,7 +3,7 @@ import './timeline.css'
 const Timeline = () => {
     return (
         <div className="timeline">
-            <div className="container left">
+            <div className="container left fd-element fade-down">
                 <div className="date">Jan-Sep<br></br>2023</div>
                 <i className="icon fa fa-home"></i>
                 <div className="content">
@@ -27,7 +27,7 @@ const Timeline = () => {
                     </ul>
                 </div>
             </div>
-            <div className="container right">
+            <div className="container right fd-element fade-down">
                 <div className="date">22 Oct</div>
                 <i className="icon fa fa-home"></i>
                 <div className="content">
