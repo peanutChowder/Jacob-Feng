@@ -3,6 +3,17 @@ import './timeline.css'
 const Timeline = () => {
     return (
         <div className="timeline">
+            <div className='container left fd-element fade-down'>
+                <div className='content'>
+                    <div className='date'>May<br></br>2025</div>
+                    <b>Graduation:</b> BSc in Computer Engineering
+                </div>
+            </div>
+            <div id='small-container' className='container right fd-element fade-down'>
+                <div className='date'>May-Dec<br></br>2024</div>
+                <i className='icon fa fa-home'></i>
+                <div className='content'>Internship loading...</div>
+            </div>
             <div className="container left fd-element fade-down">
                 <div className="date">Jan-Sep<br></br>2023</div>
                 <i className="icon fa fa-home"></i>
