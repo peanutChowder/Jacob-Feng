@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Rubik+Scribble&display=swap');
 
 :root {
+  --color-text: rgb(189, 179, 255);
+  --color-text-hover: rgb(56, 217, 245);
+  --color-text-active: rgb(188, 56, 245);
+  --color-inner : rgb(109, 46, 209);
+  --color-outer : rgb(66, 39, 242);
+
   line-height: 1.5;
   font-weight: 400;
 
