@@ -10,7 +10,7 @@ const Resume = ({ menuOpen, setMenuOpen }) => {
         <div>
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <div className='content'>
+            <div id='resume-content'>
                 <h1 className='element animated'>Professional Experience</h1>
                 <div className='description-container element animated'>
                     <h2>Wireless Systems Engineer Co-op @ Teck Resources</h2>
