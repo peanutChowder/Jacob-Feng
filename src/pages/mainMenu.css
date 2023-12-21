@@ -34,3 +34,26 @@
 #mainpage-oly-gif:hover {
     background-image: url('../assets/oly.gif');
 }
+
+.fi-element {
+    opacity: 0;
+  }
+  .fi-element.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .fi-element.fade-in:nth-child(3) {
+    animation-delay: .3s;
+  }
+  .fi-element.fade-in:nth-child(4) {
+    animation-delay: .6s;
+  }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
