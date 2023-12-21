@@ -28,7 +28,7 @@ const Timeline = () => {
                 </div>
             </div>
             <div className="container right fd-element fade-down">
-                <div className="date">22 Oct</div>
+                <div className="date">May-Sep<br></br>2022</div>
                 <i className="icon fa fa-home"></i>
                 <div className="content">
                     <h2>Data Analyst Co-op @ University of Alberta</h2>
