@@ -141,6 +141,7 @@
 @media (max-width: 767.98px) {
   .timeline::after {
     left: 90px;
+    content: none;
   }
 
   .container {
@@ -156,7 +157,7 @@
 
   .container.left::after, 
   .container.right::after {
-    left: 82px;
+    left: 92px;
   }
 
   .container.left::before,
@@ -167,7 +168,7 @@
   .container.left .date,
   .container.right .date {
     right: auto;
-    left: 15px;
+    left: 7px;
   }
 
   .container.left .icon,
@@ -176,12 +177,12 @@
     height: 20px;
     width: 20px;
     right: auto;
-    left: 146px;
+    left: 136px;
   }
 
   .container.left .content,
   .container.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 10px 10px 10px 55px;
     border-radius: 40px;
   }
 }
