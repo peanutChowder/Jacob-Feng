@@ -13,7 +13,7 @@ const MainMenu = ({ menuOpen, setMenuOpen }) => {
             <div id='mainpage-content'>
                 <div id='mainpage-oly-gif-container'>
                     <div id='mainpage-oly-gif'></div>
-                    <em>The lift that brought home the podium.</em>
+                    <em>The lift that brought home the podium. Hover to watch.</em>
                 </div>
                 <div id='mainpage-content-text'>
                     <h1>Jacob Feng</h1>
