@@ -147,6 +147,7 @@
     width: 100%;
     padding-left: 120px;
     padding-right: 30px;
+    font-size: 16px;
   }
 
   .container.right {
@@ -161,7 +162,6 @@
   .container.left::before,
   .container.right::before {
     left: 100px;
-    border-color: transparent #006E51 transparent transparent;
   }
 
   .container.left .date,
@@ -172,6 +172,9 @@
 
   .container.left .icon,
   .container.right .icon {
+    top: calc(50% - 10px);
+    height: 20px;
+    width: 20px;
     right: auto;
     left: 146px;
   }
@@ -179,6 +182,6 @@
   .container.left .content,
   .container.right .content {
     padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    border-radius: 40px;
   }
 }
