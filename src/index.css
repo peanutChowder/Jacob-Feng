@@ -20,7 +20,9 @@ h1 {
   color: rgb(189, 179, 255);
 }
 
-div:not(.disc > div):not(.home-wrapper),
+#root,
+#root > div, 
+#root > div > div, 
 body,
 html {
   height: 100%;
