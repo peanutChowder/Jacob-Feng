@@ -7,7 +7,7 @@
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -63,7 +63,6 @@
   top: calc(50% - 1px);
   right: 8px;
   background: var(--color-text);
-  z-index: 1;
 }
 
 .container.right::before {
@@ -72,6 +71,7 @@
 
 .container .date {
   position: absolute;
+  width: fit-content;
   display: inline-block;
   top: calc(50% - 8px);
   text-align: center;
@@ -84,7 +84,7 @@
 }
 
 .container.left .date {
-  right: -75px;
+  right: -135px;
 }
 
 .container.right .date {
@@ -133,11 +133,9 @@
   color: var(--color-text-light);
 }
 
-.container .content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: white;
+.container .content ul {
+  padding-left: 10px;
+  line-height: 30px;
 }
 
 @media (max-width: 767.98px) {
