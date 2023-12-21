@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import CircleMenu from '../components/circleMenu';
 import ScrollingDisplay from '../components/scrollingDisplay';
 
-import './mainMenu.css'
+import './mainPage.css'
 
-const MainMenu = ({ menuOpen, setMenuOpen }) => {
+const MainPage = ({ menuOpen, setMenuOpen }) => {
     return (
         <div>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -27,9 +27,9 @@ const MainMenu = ({ menuOpen, setMenuOpen }) => {
     )
 }
 
-MainMenu.propTypes = {
+MainPage.propTypes = {
     menuOpen: PropTypes.string,
     setMenuOpen: PropTypes.func.isRequired
 }
 
-export default MainMenu
+export default MainPage

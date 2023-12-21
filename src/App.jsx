@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { useState } from "react"
 
-import MainMenu from "./pages/mainMenu"
+import MainPage from "./pages/mainPage"
 import Resume from "./pages/resume"
 import Projects from "./pages/projects"
 import Fun from "./pages/fun"
@@ -13,7 +13,7 @@ function App() {
       <div>
         <Router>
           <Routes>
-            <Route path="/" element={<MainMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}/>
+            <Route path="/" element={<MainPage menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}/>
             <Route path="/resume" element={<Resume menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}/>
             <Route path="/projects" element={<Projects menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}/>
             <Route path="/fun" element={<Fun menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}/>
