@@ -1,11 +1,36 @@
-#oly-gif {
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&family=Rubik+Scribble&display=swap');
+
+#mainpage-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mainpage-content-text {
     width: 50vh;
     height: 50vh;
+}
+
+#mainpage-content-text > p {
+    font-size: 18px;
+}
+
+#mainpage-oly-gif-container {
+    width: 50vh;
+    height: 50vh;
+    font-family: 'Alegreya Sans';
+    font-size: 18px;
+}
+
+#mainpage-oly-gif {
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/1.gif');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#oly-gif:hover {
+#mainpage-oly-gif:hover {
     background-image: url('../assets/oly.gif');
 }
