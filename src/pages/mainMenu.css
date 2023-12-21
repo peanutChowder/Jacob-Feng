@@ -1,0 +1,11 @@
+#oly-gif {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../assets/1.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#oly-gif:hover {
+    background-image: url('../assets/oly.gif');
+}
