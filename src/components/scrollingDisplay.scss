@@ -1,0 +1,84 @@
+
+
+#scrolling {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: max-content;
+    width: max-content;
+    overflow:hidden;
+    
+    font-size: 30px;
+    line-height: 40px;
+    color: #ecf0f1;
+    
+    &-inner {
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+      padding: 0px;
+  
+      &-list {
+        margin-top: 0;
+        text-align: left;
+        list-style: none;
+        padding: 0px;
+        
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+  
+        &-item {
+          line-height:40px;
+          margin:0;
+        }
+      }
+    }
+  }
+  
+  @-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-webkit-keyframes change {
+    0%, 28.33%, 100% {transform:translate3d(0,0,0);}
+    33.33%, 61.66% {transform:translate3d(0,-33%,0);}
+    66.66%,95% {transform:translate3d(0,-66%,0);}
+  }
+  
+  @-o-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-o-keyframes change {
+    0%, 28.33%, 100% {transform:translate3d(0,0,0);}
+    33.33%, 61.66% {transform:translate3d(0,-33%,0);}
+    66.66%,95% {transform:translate3d(0,-66%,0);}
+  }
+  
+  @-moz-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-moz-keyframes change {
+    0%, 28.33%, 100% {transform:translate3d(0,0,0);}
+    33.33%, 61.66% {transform:translate3d(0,-33%,0);}
+    66.66%,95% {transform:translate3d(0,-66%,0);}
+  }
+  
+  @keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @keyframes change {
+    0%, 28.33%, 100% {transform:translate3d(0,0,0);}
+    33.33%, 61.66% {transform:translate3d(0,-33%,0);}
+    66.66%,95% {transform:translate3d(0,-66%,0);}
+  }

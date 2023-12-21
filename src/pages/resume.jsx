@@ -10,9 +10,9 @@ const Resume = ({ menuOpen, setMenuOpen }) => {
         <div>
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <div className='content'>
-                <h1 className='element animated'>Professional Experience</h1>
-                <div className='description-container element animated'>
+            <div id='resume-content'>
+                <h1 className='fd-element fade-down'>Professional Experience</h1>
+                <div className='description-container fd-element fade-down'>
                     <h2>Wireless Systems Engineer Co-op @ Teck Resources</h2>
                     <p>
                         -  Saved $500,000+ in autonomous haul truck downtime by preemptively detecting network<br></br>
@@ -39,7 +39,7 @@ const Resume = ({ menuOpen, setMenuOpen }) => {
                         - Gave back by organizing charity events across 3 offices as the Coop Volunteering Manager.
                     </p>
                 </div>
-                <div className='description-container element animated'>
+                <div className='description-container fd-element fade-down'>
                     <h2>Data Analyst Co-op @ University of Alberta</h2>
                     <p>
                         - Confirmed the plausibility of underground CO2 storage by spearheading the development of a<br></br>

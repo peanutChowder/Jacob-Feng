@@ -17,6 +17,7 @@
 h1 {
   font-family: 'Rubik Scribble';
   font-size: 60px;
+  color: rgb(189, 179, 255);
 }
 
 div:not(.disc > div):not(.home-wrapper),
