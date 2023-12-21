@@ -24,6 +24,10 @@
   z-index: -1;
 }
 
+#small-container.right {
+  max-width: fit-content;
+}
+
 .container {
   padding: 15px 30px;
   position: relative;
@@ -85,11 +89,11 @@
 }
 
 .container.left .date {
-  right: -135px;
+  right: -115px;
 }
 
 .container.right .date {
-  left: -95px;
+  left: -115px;
 }
 
 .container .icon {
