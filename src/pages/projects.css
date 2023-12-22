@@ -1,0 +1,74 @@
+#projects-content {
+    block-size: 100%;
+}
+
+#project-scroll-hint > svg {
+  height: 30px;
+}
+
+#project-scroll-hint {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 85%;
+  text-align: center;
+}
+
+section {
+    height: 100%;
+  }
+  
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.projects-content-text > h1 {
+  margin-bottom: 10px;
+}
+
+.projects-content-text > h2 {
+  margin: 0px;
+}
+  
+  section:nth-of-type(2) {
+    background-color: var(--color-background-secondary);
+  }
+  
+  section:nth-of-type(1) {
+    background: var(--color-background);
+  }
+  
+.projects-content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 30px;
+}
+
+.demo {
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+#itac-demo {
+  height: 80vh;
+}
+
+#cj-demo {
+  height: 30vh;
+}
+
+#cg-demo {
+  height: 30vh;
+}

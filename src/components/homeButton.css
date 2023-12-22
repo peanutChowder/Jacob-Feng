@@ -7,7 +7,7 @@
 
 
 .home-wrapper {
-    position: absolute;
+    position: fixed;
     top: 5vh;
     left: 5vh;
     height: 60px;
