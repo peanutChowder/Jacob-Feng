@@ -16,7 +16,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
             <section>
                 <div id='inventory-tracker-app-content'>
                     <div>
-                        <img id='ita-demo' src={inventoryManagementApp}/>
+                        <img className='demo' src={inventoryManagementApp}/>
                     </div>
                     <div>
                         <h1>Inventory Management App</h1>
