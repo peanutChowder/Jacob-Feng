@@ -6,6 +6,7 @@ import HomeButton from '../components/homeButton';
 import './projects.css'
 
 import inventoryManagementApp from '../assets/inventoryTrackerDemo.gif'
+import concurrentJob from '../assets/concurrentJobManagerDemo.gif'
 
 const Projects = ({ menuOpen, setMenuOpen }) => {
     return (
@@ -14,11 +15,11 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='projects-content'>
             <section>
-                <div id='inventory-tracker-app-content'>
+                <div className='projects-content-container '>
                     <div>
-                        <img className='demo' src={inventoryManagementApp}/>
+                        <img id='itac-demo' className='demo' src={inventoryManagementApp}/>
                     </div>
-                    <div>
+                    <div className='projects-content-text'>
                         <h1>Inventory Management App</h1>
                         <h2>Tech stack: Android Studio + Java, Firebase</h2>
                         <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
@@ -27,7 +28,14 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </section>
             <section>
-                <h1>slide 2</h1>
+                <div className='projects-content-container '>
+                        <img id='cj-demo' className='demo' src={concurrentJob}/>
+                    </div>
+                    <div>
+                        <h1>Concurrent command line</h1>
+                        <h2>Tech stack: C++/C</h2>
+                        <p>Tackles the challenges of concurrent programming without hiccups. Concurrent job management is the foundation that all modern software is built on.</p>
+                    </div>
             </section>
             <section>
                 <h1>slide 3</h1>
