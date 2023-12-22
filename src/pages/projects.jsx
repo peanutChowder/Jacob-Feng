@@ -36,16 +36,19 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
             </section>
             <section>
                 <div className='projects-content-container'>
+                    <div>
                         <img id='cj-demo' className='demo' src={concurrentJob}/>
-                    </div>
+                    </div>      
                     <div>
                         <h1>Concurrent command line</h1>
                         <h2>Tech stack: C++/C</h2>
                         <p>Tackles the challenges of concurrent programming without hiccups. Concurrent job management is the foundation that all modern software is built on.</p>
                     </div>
+                </div>
             </section>
             <section>
                 <div className='projects-content-container '>
+                    <div>
                         <img id='cg-demo' className='demo' src={coolGpt}/>
                     </div>
                     <div>
@@ -53,12 +56,10 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                         <h2>Tech stack: Vite.js + React, Flask</h2>
                         <p>Harnesses the power of ChatGPT to summarize PDFs and raw text.</p>
                     </div>
+                </div>
             </section>
             <section>
-                <h1>slide 4</h1>
-            </section>
-            <section>
-                <h1>slide 5</h1>
+                <h1>More work on <a href="https://github.com/peanutChowder">GitHub</a></h1>
             </section>
             </div>
         </div>
