@@ -16,7 +16,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='projects-content'>
             <section>
-                <div className='projects-content-container '>
+                <div className='projects-content-container fi-element fade-in'>
                     <div>
                         <img id='itac-demo' className='demo' src={inventoryManagementApp}/>
                     </div>
