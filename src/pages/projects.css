@@ -19,6 +19,14 @@ section {
     align-items: center;
     justify-content: center;
   }
+
+.projects-content-text > h1 {
+  margin-bottom: 10px;
+}
+
+.projects-content-text > h2 {
+  margin: 0px;
+}
   
   /* section:nth-of-type(2) {
     color: white;
