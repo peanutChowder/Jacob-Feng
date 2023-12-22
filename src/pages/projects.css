@@ -27,10 +27,18 @@ section {
   section:nth-of-type(1) {
     color: black;
     background: ;
-  } 
-  
-  body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    font-size: 4rem;
   } */
+  
+#inventory-tracker-app-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 30px;
+}
+
+#ita-demo {
+  height: 80vh;
+  margin-right: 20px;
+}

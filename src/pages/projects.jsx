@@ -5,6 +5,8 @@ import HomeButton from '../components/homeButton';
 
 import './projects.css'
 
+import inventoryManagementApp from '../assets/inventoryTrackerDemo.gif'
+
 const Projects = ({ menuOpen, setMenuOpen }) => {
     return (
         <div>
@@ -12,7 +14,17 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='projects-content'>
             <section>
-                <h1>slide 1</h1>
+                <div id='inventory-tracker-app-content'>
+                    <div>
+                        <img id='ita-demo' src={inventoryManagementApp}/>
+                    </div>
+                    <div>
+                        <h1>Inventory Management App</h1>
+                        <h2>Tech stack: Android Studio + Java, Firebase</h2>
+                        <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
+                    </div>
+                   
+                </div>
             </section>
             <section>
                 <h1>slide 2</h1>
