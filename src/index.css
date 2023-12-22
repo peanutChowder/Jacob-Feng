@@ -8,6 +8,7 @@
   --color-inner : rgb(109, 46, 209);
   --color-outer : rgb(66, 39, 242);
   --color-background: #242424;
+  --color-background-secondary: #383838;
 
   line-height: 1.5;
   font-weight: 400;
