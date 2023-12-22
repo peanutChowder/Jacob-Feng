@@ -24,7 +24,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     </div>
                     <div className='projects-content-text'>
                         <h1>Inventory Management App</h1>
-                        <h2>Tech stack: Android Studio + Java, Firebase</h2>
+                        <h2>(<a href='https://github.com/CMPUT301F23T29/agile-beast'>Github</a>) Tech stack: Android Studio + Java, Firebase.</h2>
                         <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
                     </div>
                     <div id='project-scroll-hint'>
@@ -41,7 +41,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     </div>      
                     <div>
                         <h1>Concurrent command line</h1>
-                        <h2>Tech stack: C++/C</h2>
+                        <h2>(<a href='https://github.com/peanutChowder/Shell-Simulator'>Github</a>) Tech stack: C++/C</h2>
                         <p>Tackles the challenges of concurrent programming without hiccups. Concurrent job management is the foundation that all modern software is built on.</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     </div>
                     <div>
                         <h1>GPT Summarizer</h1>
-                        <h2>Tech stack: Vite.js + React, Flask</h2>
+                        <h2>(<a href='https://github.com/GPTGDSC/cool-gpt-app'>Github</a>) Tech stack: Vite.js + React, Flask</h2>
                         <p>Harnesses the power of ChatGPT to summarize PDFs and raw text.</p>
                     </div>
                 </div>
