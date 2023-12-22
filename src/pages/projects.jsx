@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
 
@@ -24,7 +25,11 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                         <h2>Tech stack: Android Studio + Java, Firebase</h2>
                         <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
                     </div>
-                   
+                    <div id='project-scroll-hint'>
+                        <p>Scroll Down</p>
+                        <FontAwesomeIcon icon={faArrowAltCircleDown}/>
+                    </div>
+                    
                 </div>
             </section>
             <section>
