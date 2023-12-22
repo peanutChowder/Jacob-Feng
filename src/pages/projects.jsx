@@ -8,6 +8,7 @@ import './projects.css'
 
 import inventoryManagementApp from '../assets/inventoryTrackerDemo.gif'
 import concurrentJob from '../assets/concurrentJobManagerDemo.gif'
+import coolGpt from '../assets/coolGptDemo.gif'
 
 const Projects = ({ menuOpen, setMenuOpen }) => {
     window.scrollTo(0, 0);
@@ -34,7 +35,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </section>
             <section>
-                <div className='projects-content-container '>
+                <div className='projects-content-container'>
                         <img id='cj-demo' className='demo' src={concurrentJob}/>
                     </div>
                     <div>
@@ -44,7 +45,14 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     </div>
             </section>
             <section>
-                <h1>slide 3</h1>
+                <div className='projects-content-container '>
+                        <img id='cg-demo' className='demo' src={coolGpt}/>
+                    </div>
+                    <div>
+                        <h1>GPT Summarizer</h1>
+                        <h2>Tech stack: Vite.js + React, Flask</h2>
+                        <p>Harnesses the power of ChatGPT to summarize PDFs and raw text.</p>
+                    </div>
             </section>
             <section>
                 <h1>slide 4</h1>
