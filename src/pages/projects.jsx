@@ -10,6 +10,7 @@ import inventoryManagementApp from '../assets/inventoryTrackerDemo.gif'
 import concurrentJob from '../assets/concurrentJobManagerDemo.gif'
 
 const Projects = ({ menuOpen, setMenuOpen }) => {
+    window.scrollTo(0, 0);
     return (
         <div>
             <HomeButton/>

@@ -7,6 +7,7 @@ import Timeline from '../components/timeline';
 import "./resume.css"
 
 const Resume = ({ menuOpen, setMenuOpen }) => {
+    window.scrollTo(0, 0);
     return (
         <div>
             <HomeButton/>
