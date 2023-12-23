@@ -73,14 +73,21 @@ section {
   height: 30vh;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
   #itac-demo {
     height: 50vh;
     margin: 0px 30px;
   }
+  #cj-demo {
+    height: 22vh;
+  }
+
+  #cg-demo {
+    height: 22vh;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
 
   #itac-demo {
     height: 40vh;
