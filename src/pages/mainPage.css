@@ -88,10 +88,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: blue;
-  }
-
   body h1 {
     font-size: 40px;
   }
@@ -107,5 +103,6 @@
 
   #mainpage-oly-gif-container {
     width: 40vh;
+    height: 40vh;
   }
 }
