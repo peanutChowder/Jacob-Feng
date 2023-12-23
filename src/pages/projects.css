@@ -72,3 +72,23 @@ section {
 #cg-demo {
   height: 30vh;
 }
+
+@media (max-width: 1500px) {
+  #itac-demo {
+    height: 50vh;
+    margin: 0px 30px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  #itac-demo {
+    height: 40vh;
+  }
+
+  .projects-content-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}
