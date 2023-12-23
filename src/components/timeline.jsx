@@ -8,7 +8,7 @@ const Timeline = ({ setMenuOpen }) => {
 
     useEffect(() => {
         const { innerWidth: width, } = window
-        if (width <= 767.98) {
+        if (width <= 830) {
             setMenuOpen("close")
         }
     }, [setMenuOpen])
