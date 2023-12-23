@@ -86,9 +86,29 @@ section {
     height: 40vh;
   }
 
+  .projects-content-text {
+    margin: 0px;
+  }
+
+  .projects-content-text > h1 {
+    font-size: 30px;
+  }
+
   .projects-content-container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  #project-scroll-hint > svg {
+    height: 20px;
+  }
+  
+  #project-scroll-hint {
+    top: 92%;
+  }
+
+  #project-scroll-hint > p {
+    margin: 0px;
   }
   
 }
