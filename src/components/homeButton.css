@@ -69,3 +69,14 @@
     left: 4px;
     bottom: -2px
 }
+
+@media (max-width: 767.98px) {
+    .home-wrapper {
+        top: 2vh;
+        left: 2vh;
+    }
+
+    .home-wrapper {
+        box-shadow: 0 0 20px #ccc;
+    }
+}
