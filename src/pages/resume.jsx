@@ -13,7 +13,7 @@ const Resume = ({ menuOpen, setMenuOpen }) => {
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='resume-content'>
-                <Timeline/>
+                <Timeline setMenuOpen={setMenuOpen}/>
             </div>
         </div>
     )
