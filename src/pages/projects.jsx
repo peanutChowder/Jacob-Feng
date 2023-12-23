@@ -47,7 +47,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     <div>
                         <img id='cj-demo' className='demo' src={concurrentJob}/>
                     </div>      
-                    <div>
+                    <div className='projects-content-text'>
                         <h1>Concurrent command line</h1>
                         <h2>(<a href='https://github.com/peanutChowder/Shell-Simulator'>Github</a>) Tech stack: C++/C</h2>
                         <p>Tackles the challenges of concurrent programming without hiccups. Concurrent job management is the foundation that all modern software is built on.</p>
@@ -59,7 +59,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     <div>
                         <img id='cg-demo' className='demo' src={coolGpt}/>
                     </div>
-                    <div>
+                    <div className='projects-content-text'>
                         <h1>GPT Summarizer</h1>
                         <h2>(<a href='https://github.com/GPTGDSC/cool-gpt-app'>Github</a>) Tech stack: Vite.js + React, Flask</h2>
                         <p>Harnesses the power of ChatGPT to summarize PDFs and raw text.</p>
