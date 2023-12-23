@@ -14,6 +14,7 @@
     width: 60px;
     border-radius: 50%;
     background-color: var(--color-inner);
+    z-index: 9;
 }
 
 .home-wrapper:hover .gg-home-alt {
