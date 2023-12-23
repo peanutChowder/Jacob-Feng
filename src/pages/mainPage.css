@@ -95,4 +95,17 @@
   body h1 {
     font-size: 40px;
   }
+
+  body h2 {
+    font-size: 20px;
+    margin: 0px 0px;
+  }
+
+  #scrolling-inner-list-item {
+    font-size: 20px;
+  }
+
+  #mainpage-oly-gif-container {
+    width: 40vh;
+  }
 }
