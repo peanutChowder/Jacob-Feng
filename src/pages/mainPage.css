@@ -64,7 +64,7 @@
   height: fit-content;
 }
 
-@media (min-width: 500px) and (max-width: 1212px) {
+@media (max-width: 1212px) {
   h1 {
     margin: 0px 0px;
   }
@@ -77,10 +77,22 @@
   #mainpage-content-text {
     height: fit-content;
   }
+
+  #mainpage-oly-gif {
+    background-image: url('../assets/oly.gif');
 }
 
-@media (max-width: 500px) {
+  #gif-hover-hint {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   body {
     background-color: blue;
+  }
+
+  body h1 {
+    font-size: 40px;
   }
 }
