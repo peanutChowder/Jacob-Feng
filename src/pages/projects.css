@@ -86,6 +86,14 @@ section {
     height: 40vh;
   }
 
+  #cj-demo {
+    height: 20vh;
+  }
+
+  #cg-demo {
+    height: 20vh;
+  }
+
   .projects-content-text {
     margin: 0px;
   }
