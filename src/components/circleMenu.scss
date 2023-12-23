@@ -131,3 +131,25 @@ nav {
 		transition-duration: 0s;
 	}
 }
+
+@media (max-width: 500px) {
+	nav {
+		display: block;
+		position: fixed;
+		width: $size * $items * 2;
+		height: $size * $items * 2;
+		user-select: none;
+		transform: translate3d($size*.5,-$size*.5,0);
+		transition: transform $transition $bounce;
+		z-index: 9;
+		
+		&.open {
+			transform: translate3d(0,0,0);
+		}
+		
+		&.top-right {
+			top: -$size * ($items - 1.2);
+			right: -$size * ($items - 1.2);
+		}
+	}
+}
