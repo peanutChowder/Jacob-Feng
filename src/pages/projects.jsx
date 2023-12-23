@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 import CircleMenu from '../components/circleMenu';
@@ -12,6 +14,12 @@ import coolGpt from '../assets/coolGptDemo.gif'
 
 const Projects = ({ menuOpen, setMenuOpen }) => {
     window.scrollTo(0, 0);
+    useEffect(() => {
+        const { innerWidth: width, } = window
+        if (width <= 830) {
+            setMenuOpen("close")
+        }
+    }, [setMenuOpen])
     return (
         <div>
             <HomeButton/>
