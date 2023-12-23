@@ -12,7 +12,8 @@ const MainPage = ({ menuOpen, setMenuOpen }) => {
             <div id='mainpage-content'>
                 <div id='mainpage-oly-gif-container'  className='fi-element fade-in'>
                     <div id='mainpage-oly-gif'></div>
-                    <em>The lift that brought home the podium. Hover to watch.</em>
+                    <div><em>The lift that brought home the podium. <span id='gif-hover-hint'>Hover to watch.</span></em></div>
+                    
                 </div>
                 <div id='mainpage-content-text' className='fi-element fade-in'>
                     <h1>Jacob Feng</h1>

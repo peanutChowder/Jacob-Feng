@@ -17,6 +17,10 @@
     animation-delay: .9s;
   }
 
+  .fd-element.fade-down:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+
   @keyframes fadeInDown {
     from {
       opacity: 0;

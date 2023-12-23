@@ -39,11 +39,11 @@ section {
   margin: 0px;
 }
   
-  section:nth-of-type(2) {
+  section:nth-of-type(even) {
     background-color: var(--color-background-secondary);
   }
   
-  section:nth-of-type(1) {
+  section:nth-of-type(odd) {
     background: var(--color-background);
   }
   
@@ -71,4 +71,59 @@ section {
 
 #cg-demo {
   height: 30vh;
+}
+
+@media (max-width: 2000px) {
+  #itac-demo {
+    height: 50vh;
+    margin: 0px 30px;
+  }
+  #cj-demo {
+    height: 22vh;
+  }
+
+  #cg-demo {
+    height: 22vh;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  #itac-demo {
+    height: 40vh;
+  }
+
+  #cj-demo {
+    height: 18vh;
+  }
+
+  #cg-demo {
+    height: 18vh;
+  }
+
+  .projects-content-text {
+    margin: 0px;
+  }
+
+  .projects-content-text > h1 {
+    font-size: 30px;
+  }
+
+  .projects-content-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #project-scroll-hint > svg {
+    height: 20px;
+  }
+  
+  #project-scroll-hint {
+    top: 92%;
+  }
+
+  #project-scroll-hint > p {
+    margin: 0px;
+  }
+  
 }

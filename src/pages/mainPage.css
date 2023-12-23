@@ -9,7 +9,7 @@
 }
 
 #mainpage-content-text {
-    width: 50vh;
+    width: fit-content;
     height: 50vh;
 }
 
@@ -22,6 +22,7 @@
     height: 50vh;
     font-family: 'Alegreya Sans';
     font-size: 18px;
+    margin: 20px 20px;
 }
 
 #mainpage-oly-gif {
@@ -61,4 +62,47 @@
 
 #scrolling-container {
   height: fit-content;
+}
+
+@media (max-width: 1212px) {
+  h1 {
+    margin: 0px 0px;
+  }
+
+  #mainpage-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #mainpage-content-text {
+    height: fit-content;
+  }
+
+  #mainpage-oly-gif {
+    background-image: url('../assets/oly.gif');
+}
+
+  #gif-hover-hint {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body h1 {
+    font-size: 40px;
+  }
+
+  body h2 {
+    font-size: 20px;
+    margin: 0px 0px;
+  }
+
+  #scrolling-inner-list-item {
+    font-size: 20px;
+  }
+
+  #mainpage-oly-gif-container {
+    width: 40vh;
+    height: 40vh;
+  }
 }
