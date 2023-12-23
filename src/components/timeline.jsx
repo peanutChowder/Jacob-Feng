@@ -3,9 +3,14 @@ import './timeline.css'
 const Timeline = () => {
     return (
         <div className="timeline">
-            <div className='container left fd-element fade-down'>
+            <div id='timeline-placeholder' className='container left fd-element fade-down'>
                 <div className='content'>
-                    <div className='date'>May<br></br>2025</div>
+                </div>
+            </div>
+            <div className='container left fd-element fade-down'>
+                <div className='date'>May 2025</div>
+                <i className='icon fa fa-home'></i>
+                <div className='content'>
                     <b>Graduation:</b> BSc in Computer Engineering
                 </div>
             </div>
@@ -56,46 +61,6 @@ const Timeline = () => {
                     </ul>
                 </div>
             </div>
-            {/* <div className="container left">
-                <div className="date">10 Jul</div>
-                <i className="icon fa fa-user"></i>
-                <div className="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                </div>
-            </div>
-            <div className="container right">
-                <div className="date">18 May</div>
-                <i className="icon fa fa-running"></i>
-                <div className="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                </div>
-            </div>
-            <div className="container left">
-                <div className="date">10 Feb</div>
-                <i className="icon fa fa-cog"></i>
-                <div className="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                </div>
-            </div>
-            <div className="container right">
-                <div className="date">01 Jan</div>
-                <i className="icon fa fa-certificate"></i>
-                <div className="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                </div>
-            </div> */}
         </div>
     )
 }
