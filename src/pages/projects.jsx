@@ -47,7 +47,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </section>
             <section>
-                <div className='projects-content-container '>
+                <div className='projects-content-container'>
                     <div>
                         <img id='cg-demo' className='demo' src={coolGpt}/>
                     </div>
@@ -59,7 +59,10 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </section>
             <section>
-                <h1>More work on <a href="https://github.com/peanutChowder">GitHub</a></h1>
+                <div className='projects-content-container'>
+                    <h1>More work on <a href="https://github.com/peanutChowder">GitHub</a></h1>
+                </div>
+                
             </section>
             </div>
         </div>
