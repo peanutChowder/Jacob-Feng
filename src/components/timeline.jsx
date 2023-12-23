@@ -3,7 +3,7 @@ import './timeline.css'
 const Timeline = () => {
     return (
         <div className="timeline">
-            <div id='timeline-placeholder' className='container left fd-element fade-down'>
+            <div id='timeline-placeholder' className='container left'>
                 <div className='content'>
                 </div>
             </div>
