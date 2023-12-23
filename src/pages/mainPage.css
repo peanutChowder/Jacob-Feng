@@ -9,7 +9,7 @@
 }
 
 #mainpage-content-text {
-    width: 50vh;
+    width: fit-content;
     height: 50vh;
 }
 
@@ -22,6 +22,7 @@
     height: 50vh;
     font-family: 'Alegreya Sans';
     font-size: 18px;
+    margin: 20px 20px;
 }
 
 #mainpage-oly-gif {
@@ -63,7 +64,7 @@
   height: fit-content;
 }
 
-@media (min-width: 500px) and (max-width: 1010px) {
+@media (min-width: 500px) and (max-width: 1212px) {
   h1 {
     margin: 0px 0px;
   }
@@ -78,8 +79,8 @@
   }
 }
 
-/* @media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   body {
-    color: blue;
+    background-color: blue;
   }
-} */
+}
