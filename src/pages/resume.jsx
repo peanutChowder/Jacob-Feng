@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
@@ -8,6 +9,12 @@ import "./resume.css"
 
 const Resume = ({ menuOpen, setMenuOpen }) => {
     window.scrollTo(0, 0);
+    useEffect(() => {
+        const { innerWidth: width, } = window
+        if (width <= 830) {
+            setMenuOpen("close")
+        }
+    }, [setMenuOpen])
     return (
         <div>
             <HomeButton/>

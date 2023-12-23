@@ -1,18 +1,6 @@
-import PropTypes from 'prop-types';
-import { useEffect } from 'react';
-
 import './timeline.css'
 
-const Timeline = ({ setMenuOpen }) => {
-    
-
-    useEffect(() => {
-        const { innerWidth: width, } = window
-        if (width <= 830) {
-            setMenuOpen("close")
-        }
-    }, [setMenuOpen])
-
+const Timeline = () => {
     return (
         <div className="timeline">
             <div id='timeline-placeholder' className='container left'>
@@ -75,10 +63,6 @@ const Timeline = ({ setMenuOpen }) => {
             </div>
         </div>
     )
-}
-
-Timeline.propTypes = {
-    setMenuOpen: PropTypes.func.isRequired
 }
 
 export default Timeline
