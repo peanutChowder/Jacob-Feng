@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
+import RadioSelector from '../components/radioSelector';
 
 import './about.css'
 
@@ -11,8 +12,9 @@ const Fun = ({ menuOpen, setMenuOpen }) => {
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='fun-content'>
-                <h1>Under construction...</h1>
-            </div> 
+                <RadioSelector/>
+            </div>
+            
         </div>
     )
 }
