@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
 
-import './fun.css'
+import './about.css'
 
 const Fun = ({ menuOpen, setMenuOpen }) => {
     return (
