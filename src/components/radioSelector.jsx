@@ -3,16 +3,16 @@ import './radioSelector.scss'
 const RadioSelector = () => {
     return (
         <div>
-            <div className="hidden-toggles">
+            <div className="about-radio">
                         
-            <input name="coloration-level" type="radio" id="coloration-low" className="hidden-toggles__input"/>
-            <label htmlFor="coloration-low" className="hidden-toggles__label">Low</label>
+            <input name="coloration-level" type="radio" id="coloration-low" className="about-radio__input"/>
+            <label htmlFor="coloration-low" className="about-radio__label">Overview</label>
             
-            <input name="coloration-level" type="radio" id="coloration-medium" className="hidden-toggles__input" checked/>
-            <label htmlFor="coloration-medium" className="hidden-toggles__label">Medium</label>	
+            <input name="coloration-level" type="radio" id="coloration-medium" className="about-radio__input" checked/>
+            <label htmlFor="coloration-medium" className="about-radio__label">Sport</label>	
             
-            <input name="coloration-level" type="radio" id="coloration-high" className="hidden-toggles__input"/>
-            <label htmlFor="coloration-high" className="hidden-toggles__label">High</label>
+            <input name="coloration-level" type="radio" id="coloration-high" className="about-radio__input"/>
+            <label htmlFor="coloration-high" className="about-radio__label">Campus</label>
             
             </div>
         </div> 
