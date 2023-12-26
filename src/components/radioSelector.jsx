@@ -1,22 +1,31 @@
+import PropTypes from 'prop-types';
+
 import './radioSelector.scss'
 
-const RadioSelector = () => {
+const RadioSelector = ({ setRadioSelected }) => {
+    const handleRadioChange = ( e ) => {
+        setRadioSelected(e.target.value)
+    }
     return (
         <div>
-            <div className="about-radio">
+            <div className="about-radio" onChange={handleRadioChange}>
                         
-            <input name="about-radio" type="radio" id="about-overview" className="about-radio__input"/>
+            <input name="about-radio" type="radio" id="about-overview" className="about-radio__input" value='overview'/>
             <label htmlFor="about-overview" className="about-radio__label">Overview</label>
             
-            <input name="about-radio" type="radio" id="about-weightlifting" className="about-radio__input" checked/>
+            <input name="about-radio" type="radio" id="about-weightlifting" className="about-radio__input" value='weightlifting'/>
             <label htmlFor="about-weightlifting" className="about-radio__label">Weightlifting</label>	
             
-            <input name="about-radio" type="radio" id="about-temp" className="about-radio__input"/>
+            <input name="about-radio" type="radio" id="about-temp" className="about-radio__input" value='temp'/>
             <label htmlFor="about-temp" className="about-radio__label">temp</label>
             
             </div>
         </div> 
     )
+}
+
+RadioSelector.propTypes = {
+    setRadioSelected: PropTypes.func.isRequired
 }
 
 export default RadioSelector
