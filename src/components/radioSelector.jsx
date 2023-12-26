@@ -5,14 +5,14 @@ const RadioSelector = () => {
         <div>
             <div className="about-radio">
                         
-            <input name="coloration-level" type="radio" id="coloration-low" className="about-radio__input"/>
-            <label htmlFor="coloration-low" className="about-radio__label">Overview</label>
+            <input name="about-radio" type="radio" id="about-overview" className="about-radio__input"/>
+            <label htmlFor="about-overview" className="about-radio__label">Overview</label>
             
-            <input name="coloration-level" type="radio" id="coloration-medium" className="about-radio__input" checked/>
-            <label htmlFor="coloration-medium" className="about-radio__label">Sport</label>	
+            <input name="about-radio" type="radio" id="about-weightlifting" className="about-radio__input" checked/>
+            <label htmlFor="about-weightlifting" className="about-radio__label">Weightlifting</label>	
             
-            <input name="coloration-level" type="radio" id="coloration-high" className="about-radio__input"/>
-            <label htmlFor="coloration-high" className="about-radio__label">Campus</label>
+            <input name="about-radio" type="radio" id="about-temp" className="about-radio__input"/>
+            <label htmlFor="about-temp" className="about-radio__label">temp</label>
             
             </div>
         </div> 
