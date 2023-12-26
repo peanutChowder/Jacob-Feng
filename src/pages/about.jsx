@@ -7,7 +7,7 @@ import RadioSelector from '../components/radioSelector';
 
 import './about.css'
 
-const Fun = ({ menuOpen, setMenuOpen }) => {
+const About = ({ menuOpen, setMenuOpen }) => {
     const [radioSelected, setRadioSelected] = useState('overview')
     
     return (
@@ -22,9 +22,9 @@ const Fun = ({ menuOpen, setMenuOpen }) => {
     )
 }
 
-Fun.propTypes = {
+About.propTypes = {
     menuOpen: PropTypes.string,
     setMenuOpen: PropTypes.func.isRequired
 }
 
-export default Fun
+export default About
