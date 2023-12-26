@@ -14,9 +14,6 @@ const RadioSelector = () => {
             <input name="coloration-level" type="radio" id="coloration-high" className="hidden-toggles__input"/>
             <label htmlFor="coloration-high" className="hidden-toggles__label">High</label>
             
-            <input name="coloration-level" type="radio" id="coloration-striking" className="hidden-toggles__input"/>
-            <label htmlFor="coloration-striking" className="hidden-toggles__label">Striking</label>
-            
             </div>
         </div> 
     )
