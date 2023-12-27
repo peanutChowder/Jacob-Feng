@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import overviewImg from '../assets/overview.jpg'
 import weightliftImg from '../assets/weightlifting.jpg'
@@ -13,6 +13,13 @@ import './about.css'
 const About = ({ menuOpen, setMenuOpen }) => {
     const [radioSelected, setRadioSelected] = useState('software')
     var selectedContent
+
+    useEffect(() => {
+        const { innerWidth: width, } = window
+        if (width <= 600) {
+            setMenuOpen("close")
+        }
+    }, [setMenuOpen])
 
     if (radioSelected == 'software') {
         selectedContent = (

@@ -31,3 +31,13 @@
 #about-img-placeholder {
     height: 30vh;
 }
+
+@media (max-width: 600px) {
+    #about-content {
+        width: 100%;
+    }
+
+    #about-img {
+        height: 30vh;
+    }
+}
