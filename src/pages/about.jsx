@@ -17,7 +17,10 @@ const About = ({ menuOpen, setMenuOpen }) => {
                 <div id='about-img'></div>
                 <div id='about-content-text'>
                     <p>
-                        Hello, I&apos;m Jacob! 
+                        Hello, I&apos;m Jacob!<br></br>
+                        In 2020, I realized Biology wasn&apos;t for me.<br></br>
+                        So I turned my attention to something that better suited my personality -<br></br>
+                        Software Engineering.          
                     </p>       
                 </div>
             </div>
