@@ -9,12 +9,22 @@ import './about.css'
 
 const About = ({ menuOpen, setMenuOpen }) => {
     const [radioSelected, setRadioSelected] = useState('overview')
+    var selectedContent
+
+    if (radioSelected == 'overview') {
+        selectedContent = (
+            <div id='about-content-info'>
+                <div id='about-img'></div>
+            </div>
+        )
+    }
     
     return (
         <div>
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div id='about-content'>
+                {selectedContent}
                 <RadioSelector setRadioSelected={setRadioSelected}/>
             </div>
             
