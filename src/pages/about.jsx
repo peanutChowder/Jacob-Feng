@@ -48,6 +48,23 @@ const About = ({ menuOpen, setMenuOpen }) => {
                 </div>
             </div>
         )
+    } else if (radioSelected == 'this-site') {
+        selectedContent = (
+            <div id='about-content'>
+                <div id='about-img-placeholder'>
+                </div>
+                <div id='about-content-text'>
+                    <p>
+                        This site was built from scratch using React + Vite.js.<br></br>
+                        I learned React thanks to the FullStackOpen course, as countless other<br></br>
+                        YouTube tutorials.
+                        If you have any feedback or ideas, I would love to hear them!<br></br>
+                        <br></br>
+                        Hope you enjoyed your visit!
+                    </p>       
+                </div>
+            </div>
+        )
     }
     
     return (
