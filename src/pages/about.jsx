@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
+import overviewImg from '../assets/overview.jpg'
+
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
 import RadioSelector from '../components/radioSelector';
@@ -14,12 +16,14 @@ const About = ({ menuOpen, setMenuOpen }) => {
     if (radioSelected == 'overview') {
         selectedContent = (
             <div id='about-content'>
-                <div id='about-img'></div>
+                <div>
+                    <img id='about-img' src={overviewImg}/>
+                </div>
                 <div id='about-content-text'>
                     <p>
                         Hello, I&apos;m Jacob!<br></br>
                         In 2020, I realized Biology wasn&apos;t for me.<br></br>
-                        So I turned my attention to something that better suited my personality -<br></br>
+                        So I turned my attention to something that better suited my desire for constant evolution -<br></br>
                         Software Engineering.          
                     </p>       
                 </div>
