@@ -16,7 +16,7 @@ const About = ({ menuOpen, setMenuOpen }) => {
 
     if (radioSelected == 'overview') {
         selectedContent = (
-            <div id='about-content' className='fi-element fade-in'>
+            <div id='about-content'>
                 <div>
                     <img id='about-img' src={overviewImg}/>
                 </div>
