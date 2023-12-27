@@ -13,8 +13,13 @@ const About = ({ menuOpen, setMenuOpen }) => {
 
     if (radioSelected == 'overview') {
         selectedContent = (
-            <div id='about-content-info'>
+            <div id='about-content'>
                 <div id='about-img'></div>
+                <div id='about-content-text'>
+                    <p>
+                        Hello, I&apos;m Jacob! 
+                    </p>       
+                </div>
             </div>
         )
     }
@@ -23,7 +28,7 @@ const About = ({ menuOpen, setMenuOpen }) => {
         <div>
             <HomeButton/>
             <CircleMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <div id='about-content'>
+            <div id='about-content-container'>
                 {selectedContent}
                 <RadioSelector setRadioSelected={setRadioSelected}/>
             </div>
