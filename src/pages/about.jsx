@@ -11,10 +11,10 @@ import RadioSelector from '../components/radioSelector';
 import './about.css'
 
 const About = ({ menuOpen, setMenuOpen }) => {
-    const [radioSelected, setRadioSelected] = useState('overview')
+    const [radioSelected, setRadioSelected] = useState('software')
     var selectedContent
 
-    if (radioSelected == 'overview') {
+    if (radioSelected == 'software') {
         selectedContent = (
             <div id='about-content'>
                 <div>

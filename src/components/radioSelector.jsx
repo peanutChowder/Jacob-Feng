@@ -10,8 +10,8 @@ const RadioSelector = ({ setRadioSelected }) => {
         <div>
             <div className="about-radio" onChange={handleRadioChange}>
                         
-            <input name="about-radio" type="radio" id="about-overview" className="about-radio__input" value='overview' defaultChecked/>
-            <label htmlFor="about-overview" className="about-radio__label">Overview</label>
+            <input name="about-radio" type="radio" id="about-software" className="about-radio__input" value='software' defaultChecked/>
+            <label htmlFor="about-software" className="about-radio__label">Software</label>
             
             <input name="about-radio" type="radio" id="about-weightlifting" className="about-radio__input" value='weightlifting'/>
             <label htmlFor="about-weightlifting" className="about-radio__label">Weightlifting</label>	
