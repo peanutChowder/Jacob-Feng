@@ -21,8 +21,8 @@ const CircleMenu = ({ menuOpen, setMenuOpen }) => {
             <a className="disc l2" onClick={() => {navigate("/projects")}}>
                 <div>Projects</div>
             </a>
-            <a className="disc l3" onClick={() => {navigate("/fun")}}>
-                <div>Fun</div>
+            <a className="disc l3" onClick={() => {navigate("/about")}}>
+                <div>About</div>
             </a>
 
             <a 
