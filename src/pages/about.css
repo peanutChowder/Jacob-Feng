@@ -26,6 +26,7 @@
 
 #about-content-text {
     margin: 30px 30px;
+    width: 60%;
 }
 
 #about-img-placeholder {
@@ -39,5 +40,9 @@
 
     #about-img {
         height: 30vh;
+    }
+
+    #about-content-text {
+        width: 80%;
     }
 }
