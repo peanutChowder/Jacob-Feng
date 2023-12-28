@@ -31,8 +31,7 @@ const About = ({ menuOpen, setMenuOpen }) => {
                     <p>
                         Hello, I&apos;m Jacob!<br></br>
                         In 2019, I took a programming class elective.<br></br>
-                        Falling out of love with the strict memorization of Biology,<br></br>  
-                        I was falling in love with the creative aspect of Software.<br></br>  
+                        Falling out of love with the strict memorization of Biology, I was falling in love with the creative aspect of Software.<br></br>  
                         I changed my major to pursue my desire to create.
                     </p>       
                 </div>
@@ -49,8 +48,7 @@ const About = ({ menuOpen, setMenuOpen }) => {
                         I discovered weightlifting from the Tokyo Olympics.<br></br>
                         Impressed by the strength and aesthetics, I dove in.<br></br>
                         I qualified for Provincial Championships completely self-taught.<br></br>
-                        Realizing that I have a shot at making it Nationally,<br></br>
-                        I decided to train seriously.
+                        Realizing that I have a shot at making it Nationally, I decided to train seriously.
                     </p>       
                 </div>
             </div>
@@ -63,9 +61,9 @@ const About = ({ menuOpen, setMenuOpen }) => {
                 <div id='about-content-text'>
                     <p>
                         This site was built from scratch using React + Vite.js.<br></br>
-                        I learned React thanks to the FullStackOpen course, as countless other<br></br>
-                        YouTube tutorials.
+                        I learned React thanks to the FullStackOpen course, as countless other YouTube tutorials.
                         If you have any feedback or ideas, I would love to hear them!<br></br>
+                        <a href='https://github.com/peanutChowder/Jacob-Feng'>GitHub</a>
                         <br></br>
                         Hope you enjoyed your visit!
                     </p>       
