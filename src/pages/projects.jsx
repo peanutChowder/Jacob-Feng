@@ -50,7 +50,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                     </div>
                     <div className='projects-content-text'>
                         <h1>Kessler Fuzzy System</h1>
-                        <h2>(<a href='https://github.com/CMPUT301F23T29/agile-beast'>Github</a>) Tech stack: Python, Scikit-Fuzzy, EasyGA</h2>
+                        <h2>(<a href='https://github.com/peanutChowder/XFC-fuzzy-agent'>Github</a>) Tech stack: Python, Scikit-Fuzzy, EasyGA</h2>
                         <p>Optimized with genetic algorithms. Uses fuzzy inference to maximize asteroid destruction, minimize collisions.</p>
                     </div>
                     <div id='project-scroll-hint'>
