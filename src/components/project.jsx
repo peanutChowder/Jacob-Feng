@@ -1,9 +1,6 @@
 import PropTypes from "prop-types"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
-
-const Project = ({ id, gif}) => {
+const Project = ({ id, name, gif, url, techStack, description}) => {
     return (
         <section>
         <div className='projects-content-container fi-element fade-in'>
@@ -11,15 +8,10 @@ const Project = ({ id, gif}) => {
                 <img id={id} className='demo' src={gif}/>
             </div>
             <div className='projects-content-text'>
-                <h1>Inventory Management App</h1>
-                <h2>(<a href='https://github.com/CMPUT301F23T29/agile-beast'>Github</a>) Tech stack: Android Studio + Java, Firebase.</h2>
-                <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
+                <h1>{name}</h1>
+                <h2>(<a href={url}>Github</a>) {techStack} </h2>
+                <p>{description}</p>
             </div>
-            <div id='project-scroll-hint'>
-                <p>Scroll Down</p>
-                <FontAwesomeIcon icon={faArrowAltCircleDown}/>
-            </div>
-            
         </div>
         </section>
     )
@@ -27,7 +19,11 @@ const Project = ({ id, gif}) => {
 
 Project.propTypes = {
     id: PropTypes.string.isRequired,
-    gif: PropTypes.object.isRequired
+    name: PropTypes.string.isRequired,
+    gif: PropTypes.object.isRequired,
+    url: PropTypes.string.isRequired,
+    techStack: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
 }
 
 export default Project
