@@ -9,6 +9,7 @@ import HomeButton from '../components/homeButton';
 import './projects.css'
 
 import inventoryManagementApp from '../assets/inventoryTrackerDemo.gif'
+import kesslerFuzzy from '../assets/kesslerFuzzyDemo.gif'
 import concurrentJob from '../assets/concurrentJobManagerDemo.gif'
 import coolGpt from '../assets/coolGptDemo.gif'
 
@@ -34,6 +35,23 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                         <h1>Inventory Management App</h1>
                         <h2>(<a href='https://github.com/CMPUT301F23T29/agile-beast'>Github</a>) Tech stack: Android Studio + Java, Firebase.</h2>
                         <p>Built in an Agile team of 6. Inventory tracking made easy with features such as quick barcode scanning and item lookup on Amazon/Google.</p>
+                    </div>
+                    <div id='project-scroll-hint'>
+                        <p>Scroll Down</p>
+                        <FontAwesomeIcon icon={faArrowAltCircleDown}/>
+                    </div>
+                    
+                </div>
+            </section>
+            <section>
+                <div className='projects-content-container fi-element fade-in'>
+                    <div>
+                        <img id='kf-demo' className='demo' src={kesslerFuzzy}/>
+                    </div>
+                    <div className='projects-content-text'>
+                        <h1>Kessler Fuzzy System</h1>
+                        <h2>(<a href='https://github.com/peanutChowder/XFC-fuzzy-agent'>Github</a>) Tech stack: Python, Scikit-Fuzzy, EasyGA</h2>
+                        <p>Optimized with genetic algorithms. Uses fuzzy inference to maximize asteroid destruction, minimize collisions.</p>
                     </div>
                     <div id='project-scroll-hint'>
                         <p>Scroll Down</p>
