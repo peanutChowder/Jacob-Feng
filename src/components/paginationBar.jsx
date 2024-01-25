@@ -1,6 +1,24 @@
 import './paginationBar.scss'
 
+import { useEffect, useState } from 'react'
+
 const PaginationBar = () => {
+    const [currPage, setCurrPage] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const page = Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight)
+            
+            if (page !== currPage) {
+                setCurrPage(page) 
+            }          
+        }
+        document.addEventListener('scroll', handleScroll)
+
+        return () => {document.removeEventListener('scroll', handleScroll)}
+        })
+
+
     return (
         <>
             <div className="pagination:container">
