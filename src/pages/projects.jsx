@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
+import PaginationBar from '../components/paginationBar';
 
 import './projects.css'
 
@@ -46,6 +47,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
 
                 </section>
             </div>
+            <PaginationBar/>
         </div>
     )
 }
