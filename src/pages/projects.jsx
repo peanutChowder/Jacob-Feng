@@ -21,9 +21,6 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
         }
     }, [setMenuOpen])
 
-    useEffect(() => {
-        document.addEventListener('scroll', () => { console.log(document.documentElement.scrollTop) });
-    })
     return (
         <div>
             <HomeButton />

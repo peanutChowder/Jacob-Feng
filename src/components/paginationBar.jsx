@@ -3,11 +3,12 @@ import './paginationBar.scss'
 import { useEffect, useState } from 'react'
 
 const PaginationBar = () => {
-    const [currPage, setCurrPage] = useState(0)
+    const [currPage, setCurrPage] = useState(Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight) + 1)
+    const pages = [1, 2, 3, 4, 5] // TODO: temporary hardcoded solution
 
     useEffect(() => {
         const handleScroll = () => {
-            const page = Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight)
+            const page = Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight) + 1
             
             if (page !== currPage) {
                 setCurrPage(page) 
@@ -29,7 +30,18 @@ const PaginationBar = () => {
                     <span className="arrow:text">Previous</span>
                 </div>
 
-                <div className="pagination:number">
+                {pages.map((pageNum) => {
+                    return (
+                        <div 
+                            key={pageNum}
+                            className={`pagination:number ${pageNum === currPage ? 'pagination:active' : ''}`}
+                            >
+                            {pageNum}
+                        </div>
+                    )
+                })}
+
+                {/* <div className="pagination:number">
                     1
                 </div>
                 <div className="pagination:number">
@@ -46,7 +58,7 @@ const PaginationBar = () => {
 
                 <div className="pagination:number">
                     540
-                </div>
+                </div> */}
 
                 <div className="pagination:number arrow">
                     <svg width="18" height="18">
