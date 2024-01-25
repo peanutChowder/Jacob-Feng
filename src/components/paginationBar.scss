@@ -59,11 +59,12 @@
 }
 
 .pagination\:container {
-  display: flex;
-  align-items: center;
-  position:fixed;
-  left: 45%;
-  bottom: 30px;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .arrow\:text {
