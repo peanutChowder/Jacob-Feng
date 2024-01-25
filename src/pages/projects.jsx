@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 import CircleMenu from '../components/circleMenu';
 import HomeButton from '../components/homeButton';
 
