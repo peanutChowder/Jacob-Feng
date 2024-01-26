@@ -6,7 +6,7 @@ import projectList from '../assets/projectsList'
 
 const PaginationBar = () => {
     const [currPage, setCurrPage] = useState(Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight) + 1)
-    const translatePx = -163
+    const paginationWidth = 163
     const [translateX, setTranslateX] = useState(0)
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const PaginationBar = () => {
             
             if (page !== currPage) {
                 setCurrPage(page) 
-                setTranslateX(translatePx * (page - 1))
+                setTranslateX(-paginationWidth * (page - 1))
             }          
         }
         document.addEventListener('scroll', handleScroll)
@@ -32,7 +32,8 @@ const PaginationBar = () => {
 
     return (
         <>
-            <div className='hidden-pagination'>
+            <div className='hidden-pagination'
+                style={{width: `${paginationWidth * 5}px`}}>
                 <div className="pagination:container">
                     {projectList.map((project, pageIndex) => {
                         return (
