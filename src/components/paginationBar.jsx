@@ -6,6 +6,8 @@ import projectList from '../assets/projectsList'
 
 const PaginationBar = () => {
     const [currPage, setCurrPage] = useState(Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight) + 1)
+    const translatePx = -163
+    const [translateX, setTranslateX] = useState(0)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -13,6 +15,7 @@ const PaginationBar = () => {
             
             if (page !== currPage) {
                 setCurrPage(page) 
+                setTranslateX(translatePx * (page - 1))
             }          
         }
         document.addEventListener('scroll', handleScroll)
@@ -36,7 +39,8 @@ const PaginationBar = () => {
                             <div 
                                 key={pageIndex}
                                 className={`pagination:number ${(pageIndex + 1) === currPage ? 'pagination:active' : ''}`}
-                                onClick={() => {handlePaginationClick(pageIndex)}}>
+                                onClick={() => {handlePaginationClick(pageIndex)}}
+                                style={{transform: `translate(${translateX}px)`}}>
                             {project.shortName}
                             </div>
                         )
@@ -44,6 +48,7 @@ const PaginationBar = () => {
                     <div
                         className={`pagination:number ${currPage === 5 ? 'pagination:active' : ''}`}
                         onClick={() => {handlePaginationClick(5)}}
+                        style={{transform: `translate(${translateX}px)`}}
                     >
                         More
                     </div>
