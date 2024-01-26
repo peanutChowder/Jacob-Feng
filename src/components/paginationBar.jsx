@@ -29,23 +29,24 @@ const PaginationBar = () => {
 
     return (
         <>
-            <div className="pagination:container">
-                {projectList.map((project, pageIndex) => {
-                    return (
-                        <div 
-                            key={pageIndex}
-                            className={`pagination:number ${(pageIndex + 1) === currPage ? 'pagination:active' : ''}`}
-                            onClick={() => {handlePaginationClick(pageIndex)}}
-                        >
+            <div className='hidden-pagination'>
+                <div className="pagination:container">
+                    {projectList.map((project, pageIndex) => {
+                        return (
+                            <div 
+                                key={pageIndex}
+                                className={`pagination:number ${(pageIndex + 1) === currPage ? 'pagination:active' : ''}`}
+                                onClick={() => {handlePaginationClick(pageIndex)}}>
                             {project.shortName}
-                        </div>
-                    )
-                })}
-                <div
-                    className={`pagination:number ${currPage === 5 ? 'pagination:active' : ''}`}
-                    onClick={() => {handlePaginationClick(5)}}
-                >
-                    More
+                            </div>
+                        )
+                    })}
+                    <div
+                        className={`pagination:number ${currPage === 5 ? 'pagination:active' : ''}`}
+                        onClick={() => {handlePaginationClick(5)}}
+                    >
+                        More
+                    </div>
                 </div>
             </div>
         </>
