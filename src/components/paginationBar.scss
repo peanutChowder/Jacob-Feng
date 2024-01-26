@@ -1,16 +1,20 @@
-.hide {
-    display: none;
-    visibility: hidden;
-    height: 0;
+.hidden-pagination {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    width: 490px;
+    height: 30px;
+    overflow-x: hidden;
+    transform: translate(-50%, -50%);
 }
 
 .pagination\:container {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 90%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-10%, -50%);
 }
 
 .arrow\:text {
@@ -23,12 +27,13 @@
     padding: 3px 7px;
     border-radius: 13px;
     background: rgb(109, 46, 209);
-    width: fit-content;
-    height: fit-content;
+    min-width: 150px;
+    max-height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 16px;
 
     @media (hover: hover) {
         &:hover {
