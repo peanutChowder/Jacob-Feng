@@ -41,6 +41,12 @@ const PaginationBar = () => {
                         </div>
                     )
                 })}
+                <div
+                    className={`pagination:number ${currPage === 5 ? 'pagination:active' : ''}`}
+                    onClick={() => {handlePaginationClick(5)}}
+                >
+                    More
+                </div>
             </div>
 
             <svg className="hide">
