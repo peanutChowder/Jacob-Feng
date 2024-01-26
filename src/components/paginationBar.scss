@@ -1,0 +1,52 @@
+.hidden-pagination {
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    height: 30px;
+    overflow-x: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.pagination\:container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.arrow\:text {
+    display: block;
+    font-size: 13px;
+}
+
+.pagination\:number {
+    margin: 0 6px;
+    padding: 3px 7px;
+    border-radius: 13px;
+    background: rgb(109, 46, 209);
+    min-width: 110px;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s;
+
+    @media (hover: hover) {
+        &:hover {
+            color: rgb(56, 217, 245);
+        }
+    }
+
+    &:active {
+        background: rgb(56, 217, 245);
+    }
+}
+
+.pagination\:active {
+    background: rgb(188, 56, 245);
+    position: relative;
+}
