@@ -2,9 +2,10 @@ import './paginationBar.scss'
 
 import { useEffect, useState } from 'react'
 
+import projectList from '../assets/projectsList'
+
 const PaginationBar = () => {
     const [currPage, setCurrPage] = useState(Math.floor((document.documentElement.scrollTop + 20) / window.innerHeight) + 1)
-    const pages = [1, 2, 3, 4, 5] // TODO: temporary hardcoded solution
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,13 +24,13 @@ const PaginationBar = () => {
     return (
         <>
             <div className="pagination:container">
-                {pages.map((pageNum) => {
+                {projectList.map((project, pageIndex) => {
                     return (
                         <div 
-                            key={pageNum}
-                            className={`pagination:number ${pageNum === currPage ? 'pagination:active' : ''}`}
+                            key={pageIndex}
+                            className={`pagination:number ${(pageIndex + 1) === currPage ? 'pagination:active' : ''}`}
                             >
-                            {pageNum}
+                            {project.shortName}
                         </div>
                     )
                 })}
