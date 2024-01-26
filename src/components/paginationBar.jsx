@@ -23,13 +23,6 @@ const PaginationBar = () => {
     return (
         <>
             <div className="pagination:container">
-                <div className="pagination:number arrow">
-                    <svg width="18" height="18">
-                        <use xlinkHref="#left" />
-                    </svg>
-                    <span className="arrow:text">Previous</span>
-                </div>
-
                 {pages.map((pageNum) => {
                     return (
                         <div 
@@ -40,31 +33,6 @@ const PaginationBar = () => {
                         </div>
                     )
                 })}
-
-                {/* <div className="pagination:number">
-                    1
-                </div>
-                <div className="pagination:number">
-                    2
-                </div>
-
-                <div className="pagination:number pagination:active">
-                    3
-                </div>
-
-                <div className="pagination:number">
-                    4
-                </div>
-
-                <div className="pagination:number">
-                    540
-                </div> */}
-
-                <div className="pagination:number arrow">
-                    <svg width="18" height="18">
-                        <use xlinkHref="#right" />
-                    </svg>
-                </div>
             </div>
 
             <svg className="hide">
