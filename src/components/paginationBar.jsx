@@ -18,8 +18,14 @@ const PaginationBar = () => {
         document.addEventListener('scroll', handleScroll)
 
         return () => {document.removeEventListener('scroll', handleScroll)}
-        })
+    })
 
+    const handlePaginationClick = (pageIndex) => {        
+        window.scrollTo({
+            top: pageIndex * window.innerHeight,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <>
@@ -29,7 +35,8 @@ const PaginationBar = () => {
                         <div 
                             key={pageIndex}
                             className={`pagination:number ${(pageIndex + 1) === currPage ? 'pagination:active' : ''}`}
-                            >
+                            onClick={() => {handlePaginationClick(pageIndex)}}
+                        >
                             {project.shortName}
                         </div>
                     )
