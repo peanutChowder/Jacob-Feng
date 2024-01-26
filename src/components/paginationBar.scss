@@ -7,43 +7,42 @@
 .pagination\:container {
     display: flex;
     align-items: center;
-    position:fixed;
+    position: fixed;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .arrow\:text {
-  display: block;
-  font-size: 13px;
+    display: block;
+    font-size: 13px;
 }
 
 .pagination\:number {
-  --size: 32px;
-  --margin: 6px;
-  margin: 0 var(--margin);
-  border-radius: 6px;
-  background: rgb(109, 46, 209);
-  max-width: auto;
-  min-width: var(--size);
-  height: var(--size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0 6px;
-  @media (hover: hover) {
-    &:hover {
-      color: rgb(56, 217, 245);
-      font-weight: bold;
+    margin: 0 6px;
+    padding: 3px 7px;
+    border-radius: 13px;
+    background: rgb(109, 46, 209);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media (hover: hover) {
+        &:hover {
+            color: rgb(56, 217, 245);
+            font-weight: bold;
+        }
     }
-  }
-  &:active {
-      background: rgb(56, 217, 245);
-  }
+
+    &:active {
+        background: rgb(56, 217, 245);
+    }
 }
 
 .pagination\:active {
-  background: rgb(188, 56, 245);
-  position: relative;
+    background: rgb(188, 56, 245);
+    position: relative;
 }
