@@ -8,16 +8,39 @@ const Timeline = () => {
                 </div>
             </div>
             <div className='container left fd-element fade-down'>
-                <div className='date'>May 2025</div>
+                <div className='date'>Jan 2026</div>
                 <i className='icon fa fa-home'></i>
                 <div className='content'>
-                    <b>Graduation:</b> BSc in Computer Engineering
+                    <b>Graduation:</b> BSc in Computer Science
                 </div>
             </div>
             <div id='small-container' className='container right fd-element fade-down'>
-                <div className='date'>May-Dec<br></br>2024</div>
+                <div className='date'>Jan-Sep<br></br>2025</div>
                 <i className='icon fa fa-home'></i>
                 <div className='content'>Internship loading...</div>
+            </div>
+            <div className="container right fd-element fade-down">
+                <div className="date">May-Sep<br></br>2024</div>
+                <i className="icon fa fa-home"></i>
+                <div className="content">
+                    <h2>Software Engineer Intern @ Apple</h2>
+                    <ul>
+                        <li>
+                            <b>Python, Foundation Models:</b> uilt and optimized an AI workflow for triaging Apple Watch logs that uses a tuned model to generate
+                            analysis for logs based on preset questions.
+                            <br></br>Improved workflow reliability by 500% and speed by 400% by using defensive programming to catch all
+exceptions thrown by Foundation Model and multithreaded model calls, respectively.
+                        </li>
+                        <li>
+                            <b>C++ Internal Tooling:</b> Implemented log visualization using C++ on an internal Mac App used by 15+ teams, generating charts for
+                            2GB logs in ~1 second by using file chunking. <br></br> Features custom configurations, parallel operations such as searching + generating charts, and highlighting.
+                        </li>
+                        <li>
+                            <b>Slack API, Python:</b> Developed a DevOps Slack Bot for issue tracking updates on milestones and progress using Python, hosted
+                            on internal cloud.
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div className="container left fd-element fade-down">
                 <div className="date">Jan-Sep<br></br>2023</div>

@@ -20,7 +20,7 @@ const MainPage = ({ menuOpen, setMenuOpen }) => {
                     <div id='scrolling-container'>
                         <ScrollingDisplay/>
                     </div>
-                    <h2>Seeking Summer 2024 8-month internships</h2>   
+                    <h2>Seeking Spring and Summer 2025 Internships</h2>   
                     <h2><a href='https://github.com/peanutChowder'>GitHub</a> | <a href='https://www.linkedin.com/in/jacobsolives/'>LinkedIn</a></h2>    
                     <p>Built in React.js</p>
                 </div>
